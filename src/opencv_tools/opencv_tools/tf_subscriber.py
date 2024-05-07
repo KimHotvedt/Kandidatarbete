@@ -18,14 +18,14 @@ class TFSubscriberPlugin(Node):
     def print_all_frames(self):
         # Print all available frames in the transform buffer
         frames_str = self.tf_buffer.all_frames_as_string()
-        self.get_logger().info(frames_str)  # Adjust the logging function here
+        self.get_logger().info(frames_str) 
         
 
     def update_model_position(self):
         try:
             transform = self.tf_buffer.lookup_transform('camera_depth_frame', 'Aruco', rclpy.time.Time()) # 'camera_depth_frame', 'marker_frame_id'
             model_state = ModelState()
-            model_state.model_name = 'Aruco_Marker'  # Replace with the name of your robot model in Gazebo
+            model_state.model_name = 'Aruco_Marker'
             model_state.pose = transform.transform
             self.model_state_publisher.publish(model_state)
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
@@ -35,7 +35,7 @@ def main(args=None):
     rclpy.init(args=args)
 
     tf_subscriber = TFSubscriberPlugin()
-    rate = tf_subscriber.create_rate(10)  # Adjust the rate as needed
+    rate = tf_subscriber.create_rate(10)  
 
     while rclpy.ok():
         tf_subscriber.update_model_position()
