@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="Aruco_Marker">
+
+<!-- Here we define the model parameters  -->
+
+<!-- Geometry  -->
+<!-- 
+<xacro:property name="base_link_length" value="0.5"/>
+<xacro:property name="base_link_radius" value="0.4"/>
+<size>0.40 0.23 0.18</size> -->
+
+<!-- Include the Gazebo definitions  -->
+
+<xacro:include filename="$(find gazebo_test)/model/robot.gazebo" />
+
+    <link name="camera_depth_frame">
+    </link> 
+
+	<joint name="camera_depth_frame_to_aruco" type="fixed">
+		<parent link="camera_depth_frame"/>
+		<child link="Aruco"/>
+	</joint> 
+
+    
+
+		<link name="Aruco">
+			<visual>
+				<geometry>
+					<mesh filename="file://$(find gazebo_test)/model/aruco_work.dae"/>
+
+				</geometry>
+				
+
+				<origin rpy="0 0 0" xyz="0 0 1"/> <!--Chaning xyz makes the move to exact position, defies gravity -->
+							
+			</visual>
+
+			
+			<collision>
+				<geometry>
+					<mesh filename="file://$(find gazebo_test)/model/aruco_work.dae"/>
+					
+					
+				</geometry>
+				<origin rpy="0 0 0" xyz="0 0 0"/> <!--Chaning xyz makes the object float around -->
+			</collision>
+			
+			<inertial>
+				<origin rpy="0 0 0" xyz="0 0 0"/> <!--Chaning xyz makes the object balancing -->
+				<mass value="1"/>
+				<inertia ixx="100" ixy="0" ixz="0" iyy="100" iyz="0" izz="100" />
+			</inertial> 
+			
+		</link>	
+
+	
+
+</robot>
+

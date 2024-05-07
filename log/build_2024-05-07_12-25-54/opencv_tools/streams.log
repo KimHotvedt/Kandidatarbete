@@ -1,0 +1,27 @@
+[0.736s] Invoking command in '/home/kimhotvedt/kand_ws/src/opencv_tools': PYTHONPATH=/home/kimhotvedt/kand_ws/build/opencv_tools/prefix_override:/home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tools build --build-base /home/kimhotvedt/kand_ws/build/opencv_tools/build install --record /home/kimhotvedt/kand_ws/build/opencv_tools/install.log --single-version-externally-managed install_data
+[0.999s] running egg_info
+[0.999s] writing ../../build/opencv_tools/opencv_tools.egg-info/PKG-INFO
+[0.999s] writing dependency_links to ../../build/opencv_tools/opencv_tools.egg-info/dependency_links.txt
+[1.000s] writing entry points to ../../build/opencv_tools/opencv_tools.egg-info/entry_points.txt
+[1.000s] writing requirements to ../../build/opencv_tools/opencv_tools.egg-info/requires.txt
+[1.000s] writing top-level names to ../../build/opencv_tools/opencv_tools.egg-info/top_level.txt
+[1.002s] reading manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+[1.003s] writing manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+[1.003s] running build
+[1.003s] running build_py
+[1.003s] copying opencv_tools/basic_image_publisher.py -> /home/kimhotvedt/kand_ws/build/opencv_tools/build/lib/opencv_tools
+[1.003s] running install
+[1.004s] running install_lib
+[1.004s] copying /home/kimhotvedt/kand_ws/build/opencv_tools/build/lib/opencv_tools/basic_image_publisher.py -> /home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages/opencv_tools
+[1.005s] byte-compiling /home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages/opencv_tools/basic_image_publisher.py to basic_image_publisher.cpython-310.pyc
+[1.006s] running install_data
+[1.006s] running install_egg_info
+[1.008s] removing '/home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages/opencv_tools-0.0.0-py3.10.egg-info' (and everything under it)
+[1.009s] Copying ../../build/opencv_tools/opencv_tools.egg-info to /home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages/opencv_tools-0.0.0-py3.10.egg-info
+[1.010s] running install_scripts
+[1.037s] Installing aruco_marker_pose_estimaton_tf script to /home/kimhotvedt/kand_ws/install/opencv_tools/lib/opencv_tools
+[1.037s] Installing img_publisher script to /home/kimhotvedt/kand_ws/install/opencv_tools/lib/opencv_tools
+[1.037s] Installing img_subscriber script to /home/kimhotvedt/kand_ws/install/opencv_tools/lib/opencv_tools
+[1.038s] Installing tf_subscriber script to /home/kimhotvedt/kand_ws/install/opencv_tools/lib/opencv_tools
+[1.038s] writing list of installed files to '/home/kimhotvedt/kand_ws/build/opencv_tools/install.log'
+[1.073s] Invoked command in '/home/kimhotvedt/kand_ws/src/opencv_tools' returned '0': PYTHONPATH=/home/kimhotvedt/kand_ws/build/opencv_tools/prefix_override:/home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tools build --build-base /home/kimhotvedt/kand_ws/build/opencv_tools/build install --record /home/kimhotvedt/kand_ws/build/opencv_tools/install.log --single-version-externally-managed install_data

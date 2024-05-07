@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.5">
+	<world name="Empty world"> 
+		<!-- Light source -->
+		<include>
+			<uri>model://sun</uri>
+		</include>
+
+		<!-- This is the ground plane -->
+		<include>
+			<uri>model://ground_plane</uri>
+		</include>
+	</world>
+</sdf>

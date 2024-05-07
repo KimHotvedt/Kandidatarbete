@@ -1,0 +1,20 @@
+[0.649s] Invoking command in '/home/kimhotvedt/kand_ws/src/opencv_tools': PYTHONPATH=/home/kimhotvedt/kand_ws/build/opencv_tools/prefix_override:/home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tools build --build-base /home/kimhotvedt/kand_ws/build/opencv_tools/build install --record /home/kimhotvedt/kand_ws/build/opencv_tools/install.log --single-version-externally-managed install_data
+[0.961s] running egg_info
+[0.962s] writing ../../build/opencv_tools/opencv_tools.egg-info/PKG-INFO
+[0.962s] writing dependency_links to ../../build/opencv_tools/opencv_tools.egg-info/dependency_links.txt
+[0.963s] writing entry points to ../../build/opencv_tools/opencv_tools.egg-info/entry_points.txt
+[0.964s] writing requirements to ../../build/opencv_tools/opencv_tools.egg-info/requires.txt
+[0.964s] writing top-level names to ../../build/opencv_tools/opencv_tools.egg-info/top_level.txt
+[0.970s] reading manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+[0.971s] writing manifest file '../../build/opencv_tools/opencv_tools.egg-info/SOURCES.txt'
+[0.972s] running build
+[0.972s] running build_py
+[0.972s] running install
+[0.973s] running install_lib
+[0.975s] running install_data
+[0.975s] running install_egg_info
+[0.978s] removing '/home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages/opencv_tools-0.0.0-py3.10.egg-info' (and everything under it)
+[0.979s] Copying ../../build/opencv_tools/opencv_tools.egg-info to /home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages/opencv_tools-0.0.0-py3.10.egg-info
+[0.981s] running install_scripts
+[1.018s] writing list of installed files to '/home/kimhotvedt/kand_ws/build/opencv_tools/install.log'
+[1.068s] Invoked command in '/home/kimhotvedt/kand_ws/src/opencv_tools' returned '0': PYTHONPATH=/home/kimhotvedt/kand_ws/build/opencv_tools/prefix_override:/home/kimhotvedt/kand_ws/install/opencv_tools/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/opencv_tools build --build-base /home/kimhotvedt/kand_ws/build/opencv_tools/build install --record /home/kimhotvedt/kand_ws/build/opencv_tools/install.log --single-version-externally-managed install_data
