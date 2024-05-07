@@ -31,7 +31,7 @@
 				</geometry>
 				
 
-				<origin rpy="0 0 0" xyz="0 0 1"/> <!--Chaning xyz makes the move to exact position, defies gravity -->
+				<origin rpy="0 0 0" xyz="0 0 0"/> <!--Chaning xyz makes the move to exact position, defies gravity -->
 							
 			</visual>
 
