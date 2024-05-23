@@ -13,23 +13,23 @@ class TFSubscriberPlugin(Node):
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer, self)
 
         self.model_state_publisher = self.create_publisher(ModelState, '/gazebo/set_model_state', 1)
-        self.print_all_frames()
-
-    def print_all_frames(self):
-        # Print all available frames in the transform buffer
-        frames_str = self.tf_buffer.all_frames_as_string()
-        self.get_logger().info(frames_str) 
-        
 
     def update_model_position(self):
         try:
-            transform = self.tf_buffer.lookup_transform('camera_depth_frame', 'Aruco', rclpy.time.Time()) # 'camera_depth_frame', 'marker_frame_id'
+            transform = self.tf_buffer.lookup_transform('camera_depth_frame', 'aruco_marker_', rclpy.time.Time()) 
             model_state = ModelState()
             model_state.model_name = 'Aruco_Marker'
-            model_state.pose = transform.transform
+            model_state.pose = transform_to_pose(transform)
             self.model_state_publisher.publish(model_state)
+            self.get_logger().info('Found transform')
         except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException):
             self.get_logger().warn("Failed to lookup transform")
+
+def transform_to_pose(transform):
+    pose = Pose()
+    pose.position = transform.transform.translation
+    pose.orientation = transform.transform.rotation
+    return pose
 
 def main(args=None):
     rclpy.init(args=args)

@@ -116,29 +116,29 @@ class ArucoNode(Node):
 
     # A list to store information about the pose estimation, later to be used in analysis of pose stability.
 
-  def publish_aruco_tf(self, translation_vector, rotation_quaternion):
-    """
-    Publishes a TF transform between the camera_depth_frame and the Aruco frame.
-    """
-    # Create a TransformStamped message
-    s = TransformStamped()
-    s.header.stamp = self.get_clock().now().to_msg()
-    s.header.frame_id = 'camera_depth_frame'
-    s.child_frame_id = 'Aruco'  # Specify the frame ID for the Aruco link
+  # def publish_aruco_tf(self, translation_vector, rotation_quaternion):
+  #   """
+  #   Publishes a TF transform between the camera_depth_frame and the Aruco frame.
+  #   """
+  #   # Create a TransformStamped message
+  #   s = TransformStamped()
+  #   s.header.stamp = self.get_clock().now().to_msg()
+  #   s.header.frame_id = 'camera_depth_frame'
+  #   s.child_frame_id = 'Aruco'  # Specify the frame ID for the Aruco link
 
-    # Store the translation (i.e. position) information
-    s.transform.translation.x = translation_vector[0]
-    s.transform.translation.y = translation_vector[1]
-    s.transform.translation.z = translation_vector[2]
+  #   # Store the translation (i.e. position) information
+  #   s.transform.translation.x = translation_vector[0]
+  #   s.transform.translation.y = translation_vector[1]
+  #   s.transform.translation.z = translation_vector[2]
 
-    # Store the rotation information
-    s.transform.rotation.x = rotation_quaternion[0]
-    s.transform.rotation.y = rotation_quaternion[1]
-    s.transform.rotation.z = rotation_quaternion[2]
-    s.transform.rotation.w = rotation_quaternion[3]
+  #   # Store the rotation information
+  #   s.transform.rotation.x = rotation_quaternion[0]
+  #   s.transform.rotation.y = rotation_quaternion[1]
+  #   s.transform.rotation.z = rotation_quaternion[2]
+  #   s.transform.rotation.w = rotation_quaternion[3]
 
-    # Send the transform
-    self.tfbroadcaster.sendTransform(s)
+  #   # Send the transform
+  #   self.tfbroadcaster.sendTransform(s)
     
     
   def listener_callback(self, data):
@@ -251,12 +251,12 @@ class ArucoNode(Node):
  
         # Send the transform
         self.tfbroadcaster.sendTransform(t) #Rviz
-        self.publish_aruco_tf(translation_vector, rotation_quaternion)
+        #self.publish_aruco_tf(translation_vector, rotation_quaternion)
         #self.gazebo_transform_publisher.publish(t) #Gazebo
         #lookuptransfrom, convertera till pose
                    
         # Draw the axes on the marker
-        cv2.aruco.drawAxis(current_frame, self.mtx, self.dst, rvecs[i], tvecs[i], 0.05) 
+        cv2.aruco.drawAxis(current_frame, self.mtx, self.dst, rvecs[i], tvecs[i], 0.15) 
   
 
   # Create a topic send to gazebo, make sure you can listen to the topic (the pose), send a message.

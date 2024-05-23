@@ -1,0 +1,28 @@
+[0.042s] Invoking command in '/home/kimhotvedt/kand_ws/build/gazebo_test': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/kimhotvedt/kand_ws/build/gazebo_test -- -j8 -l8
+[0.576s] Invoked command in '/home/kimhotvedt/kand_ws/build/gazebo_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --build /home/kimhotvedt/kand_ws/build/gazebo_test -- -j8 -l8
+[0.640s] Invoking command in '/home/kimhotvedt/kand_ws/build/gazebo_test': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/kimhotvedt/kand_ws/build/gazebo_test
+[0.662s] -- Install configuration: ""
+[0.663s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/launch
+[0.664s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/launch/gazebo_model.launch.py
+[0.665s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/model
+[0.665s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/model/ArucoMarker.jpg
+[0.665s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/model/empty_world.world
+[0.665s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/model/robot.gazebo
+[0.666s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/model/aruco_work.dae
+[0.666s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/model/robot.xacro
+[0.667s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/ament_index/resource_index/package_run_dependencies/gazebo_test
+[0.667s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/ament_index/resource_index/parent_prefix_path/gazebo_test
+[0.667s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/environment/ament_prefix_path.sh
+[0.668s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/environment/ament_prefix_path.dsv
+[0.668s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/environment/path.sh
+[0.669s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/environment/path.dsv
+[0.669s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/local_setup.bash
+[0.669s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/local_setup.sh
+[0.669s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/local_setup.zsh
+[0.670s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/local_setup.dsv
+[0.670s] -- Installing: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/package.dsv
+[0.670s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/ament_index/resource_index/packages/gazebo_test
+[0.670s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/cmake/gazebo_testConfig.cmake
+[0.670s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/cmake/gazebo_testConfig-version.cmake
+[0.670s] -- Up-to-date: /home/kimhotvedt/kand_ws/install/gazebo_test/share/gazebo_test/package.xml
+[0.674s] Invoked command in '/home/kimhotvedt/kand_ws/build/gazebo_test' returned '0': CMAKE_PREFIX_PATH=/opt/ros/iron /usr/bin/cmake --install /home/kimhotvedt/kand_ws/build/gazebo_test

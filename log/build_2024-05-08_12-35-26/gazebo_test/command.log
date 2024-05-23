@@ -1,0 +1,4 @@
+Invoking command in '/home/kimhotvedt/kand_ws/build/gazebo_test': /usr/bin/cmake --build /home/kimhotvedt/kand_ws/build/gazebo_test -- -j8 -l8
+Invoked command in '/home/kimhotvedt/kand_ws/build/gazebo_test' returned '0': /usr/bin/cmake --build /home/kimhotvedt/kand_ws/build/gazebo_test -- -j8 -l8
+Invoking command in '/home/kimhotvedt/kand_ws/build/gazebo_test': /usr/bin/cmake --install /home/kimhotvedt/kand_ws/build/gazebo_test
+Invoked command in '/home/kimhotvedt/kand_ws/build/gazebo_test' returned '0': /usr/bin/cmake --install /home/kimhotvedt/kand_ws/build/gazebo_test
